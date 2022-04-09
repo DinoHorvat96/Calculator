@@ -1,4 +1,4 @@
-def calculation():
+def chooseOperator():
     operation = input('''
 Select which operation you would like to perform:
 "+" -> addition
@@ -38,10 +38,10 @@ Type "Y" for YES or "N" for NO.
 Y/N: ''')
 
     if calc_again.upper() == 'Y':
-        calculation()
+        chooseOperator()
     elif calc_again.upper() == 'N':
         print('Closing the program...')
     else:
         repeat()
 
-calculation()
+chooseOperator()
